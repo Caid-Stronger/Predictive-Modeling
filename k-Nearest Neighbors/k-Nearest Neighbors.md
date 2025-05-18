@@ -30,3 +30,24 @@ Each sample is labeled as one of three flower species:
 * Step 1: Calculate Euclidean Distance.
 * Step 2: Get Nearest Neighbors.
 * Step 3: Make Predictions.
+
+
+# 2 Types of Different Weight
+
+## Weights = uniform
+
+$$
+\hat{y} = \frac{1}{k} \sum_{i=1}^{k} y_i
+$$
+
+## Weights = distance (much more accurate)
+
+$$
+\hat{y} = \frac{\sum_{i=1}^{k} \frac{1}{d_i} y_i}{\sum_{i=1}^{k} \frac{1}{d_i}}
+$$
+
+Where:
+
+- \( k \) is the number of neighbors  
+- \( y_i \) is the target value of the \( i \)-th neighbor  
+- \( d_i \) is the distance from the test point to the \( i \)-th neighbor  
