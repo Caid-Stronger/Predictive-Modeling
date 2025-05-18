@@ -12,3 +12,7 @@ This repository documents my learning journey in the Predictive Modeling course 
 * Reflections on model performance and evaluation techniques
 
 The goal is to consolidate foundational and advanced techniques in predictive analytics, including regression, classification, feature selection, model tuning, validation, and time series. 
+
+
+##  Classification Models 
+*  k-Nearest Neighbors
