@@ -11,7 +11,7 @@ This repository documents my learning journey in the Predictive Modeling course 
 
 * Reflections on model performance and evaluation techniques
 
-The goal is to consolidate foundational and advanced techniques in predictive analytics, including regression, classification, feature selection, model tuning, validation, and time series. 
+The goal is to consolidate foundational and advanced techniques in predictive analytics, including regression, classification, Decision Trees, Recommender Systems, Model Evaluation and Validaiton, Ensemble Methods, Bayesian Methods, Time Series Forecasting, and Monte Carlo Simulating. 
 
 
 ##  Classification Models 
