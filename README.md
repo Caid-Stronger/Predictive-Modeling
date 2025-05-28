@@ -16,3 +16,4 @@ The goal is to consolidate foundational and advanced techniques in predictive an
 
 ##  Classification Models 
 *  [k-Nearest Neighbors](https://github.com/Caid-Stronger/Predictive-Modeling/tree/main/k-Nearest%20Neighbors)
+* [Logistic Regression](https://github.com/Caid-Stronger/Predictive-Modeling/tree/main/Classification/Logistic%20Classification)
