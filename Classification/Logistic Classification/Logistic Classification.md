@@ -181,3 +181,35 @@ $$
 
 We use this to compute the loss of classifying all training examples per epoch.
 
+##  Logistic Regression with L2 Regularization
+
+The loss function for logistic regression can be regularized by adding a simple regularization term,  
+which will shrink the weights during model training:
+
+$$
+L(\mathbf{w}, b) = \frac{1}{n} \sum_{i=1}^{n} \left[ -y^{(i)} \log(\sigma(z^{(i)})) - (1 - y^{(i)}) \log(1 - \sigma(z^{(i)})) \right] + \frac{\lambda}{2n} \|\mathbf{w}\|^2
+$$
+
+
+---
+
+###  Gradient of the Unregularized Loss
+
+The partial derivative of the unregularized loss is defined as:
+
+$$
+\frac{\partial L(\mathbf{w}, b)}{\partial w_j} = \left( \frac{1}{n} \sum_{i=1}^{n} (\sigma(\mathbf{w}^T \mathbf{x}^{(i)}) - y^{(i)}) x_j^{(i)} \right)
+$$
+
+
+---
+
+###  Adding Regularization
+
+Adding the regularization term to the loss changes the partial derivative to the following form:
+
+$$
+\frac{\partial L(\mathbf{w}, b)}{\partial w_j} = \left( \frac{1}{n} \sum_{i=1}^{n} (\sigma(\mathbf{w}^T \mathbf{x}^{(i)}) - y^{(i)}) x_j^{(i)} \right) + \frac{\lambda}{n} w_j
+$$
+
+
