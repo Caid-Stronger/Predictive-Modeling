@@ -51,3 +51,68 @@ As shown in *Figure 3.14*, we can transform a 2D dataset into a new 3D feature s
 
 ![image](https://github.com/user-attachments/assets/d5a4b84f-5843-4f3a-a690-9c06402503d7)
 
+To avoid explicitly computing the dot product between two points in a high-dimensional space,  
+we define a **kernel function** as follows:
+
+```math
+\kappa(\mathbf{x}^{(i)}, \mathbf{x}^{(j)}) = \phi(\mathbf{x}^{(i)})^T \phi(\mathbf{x}^{(j)})
+```
+
+
+## RBF Kernel (Radial Basis Function Kernel)
+
+One of the most commonly used kernels is the **Radial Basis Function (RBF)** kernel,  
+also known as the **Gaussian kernel**:
+
+```math
+\kappa(\mathbf{x}^{(i)}, \mathbf{x}^{(j)}) = \exp\left( -\frac{ \| \mathbf{x}^{(i)} - \mathbf{x}^{(j)} \|^2 }{2\sigma^2} \right)
+```
+
+### Simplified RBF Kernel
+
+The RBF kernel is often simplified to:
+
+```math
+\kappa(\mathbf{x}^{(i)}, \mathbf{x}^{(j)}) = \exp\left( -\gamma \| \mathbf{x}^{(i)} - \mathbf{x}^{(j)} \|^2 \right)
+```
+
+Where:
+
+```math
+\gamma = \frac{1}{2\sigma^2}
+```
+is a hyperparameter that must be tuned. <br> 
+
+
+![image](https://github.com/user-attachments/assets/fb2c8ba6-8430-4dcc-848f-f32675274a26)
+
+
+##  `gamma` 在 SVM 中的含义
+
+当你使用 **核函数（kernel function）**，比如 RBF 核（也叫 Gaussian 核）时，`gamma` 控制的是：
+
+> 每个样本对最终模型的“影响范围”有多大。
+
+它实际上是核函数中的一个超参数，出现在下面这个公式中：
+
+$$
+\kappa(\mathbf{x}^{(i)}, \mathbf{x}^{(j)}) = \exp\left( -\gamma \|\mathbf{x}^{(i)} - \mathbf{x}^{(j)}\|^2 \right)
+$$
+
+
+###  大 gamma：**每个点只影响自己周围的小区域**
+- **结果**：模型会记住训练数据，形成非常蜿蜒、**复杂的边界**。
+- **优点**：能高度拟合训练集。
+- **缺点**：容易过拟合，对新样本泛化能力差。
+
+###  小 gamma：**每个点的影响范围很大**
+- **结果**：模型更关注全局结构，形成平滑、**简单的边界**。
+- **优点**：泛化能力好，不容易过拟合。
+- **缺点**：容易欠拟合，忽略局部细节。
+
+---
+
+## 🎨 可视化类比
+
+- 大 gamma ≈ 放大镜看每个点，眼里只有附近  
+- 小 gamma ≈ 从远处看整体分布，细节模糊但能看到趋势
