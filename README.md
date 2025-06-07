@@ -23,3 +23,5 @@ The goal is to consolidate foundational and advanced techniques in predictive an
 
 ## Clustering 
 * [k-means](https://github.com/Caid-Stronger/Predictive-Modeling/tree/main/Clustering/1.%20K-means)
+* [Hierarchical Tree](https://github.com/Caid-Stronger/Predictive-Modeling/tree/main/Clustering/2.%20Hierarchical%20Tree)
+* [DBSCAN](https://github.com/Caid-Stronger/Predictive-Modeling/tree/main/Clustering/3.%20DBSCAN)
