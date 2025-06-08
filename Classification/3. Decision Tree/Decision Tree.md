@@ -87,9 +87,9 @@ $$
 ## Ensemble of decision trees 
 
 1. Draw a random boostrap sample of size **n** (randomly choose n examples from the training datasets with replacement)
-2. Grow a decision tree from the boostrap sample. At each node:
+2. Grow a decision tree from the boostrap sample. At each node: <br>
    a. Randomly select **d** features without replacement <br>
-   b. Split node using the feature that provides the best split according to the objective function, for instance, maximaizing the information again.
+   b. Split node using the feature that provides the best split according to the objective function, for instance, maximaizing the information again. <br>
 3. Repeat steps 1-2 k times
 4. Aggregate the prediction by each tree to assign the class label by majority vote.
 
