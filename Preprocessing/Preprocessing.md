@@ -81,3 +81,16 @@ increase the regularization strength via the regularization parameter $\lambda$ 
 
 L1 Regularization can be used as a feature  selection  <br>
 
+## Sequential feature selection algorithms 
+
+feature selection: we select a subset of the original features <br> 
+feature extraction: we derive information from the  feature set to construct a new feature subspace <br> 
+
+Sequential feature selection algorithms is a greedy search algorithms that are used to reduce an initial d-dimensional feature space to a k-dimensional feature subspace where k<d. <br> 
+It will select  a subset of features that are most relevant to the problem <br> 
+
+### Sequential Backward selection 
+sequentially removes features from the full feature subset until the  new feature subspace contains the desired numbe of features; define the criterion function *J* that we want  to minimize. <br> 
+
+
+
