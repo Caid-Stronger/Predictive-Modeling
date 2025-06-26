@@ -107,6 +107,3 @@ $$
 
 
 
-$$ \mathbf{m}_i = \begin{bmatrix} \mu_{i,\text{alcohol}} \\ \mu_{i,\text{malic acid}} \\ \vdots \\ \mu_{i,\text{proline}} \end{bmatrix}^T, \quad i \in \{1, 2, 3\} 
-$$ 
-
