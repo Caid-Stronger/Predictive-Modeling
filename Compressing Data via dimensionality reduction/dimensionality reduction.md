@@ -105,7 +105,14 @@ $$
  6. Choose the k eigenvectors that correspond to the k largest eigenvalues to construct a d×k-dimensional transofrmation matrix W; the eigenvectors  are the columns of this matrix
  7. Project the examples onto the new feature subspace using the transformation matrix, W.
 
-
 ![image](https://github.com/user-attachments/assets/8db1d303-5f67-4e45-b873-99a66912d638)
 
+![image](https://github.com/user-attachments/assets/ca1a7cc9-cafa-4ef5-bc15-d74f7983c890)
+
+![image](https://github.com/user-attachments/assets/1fdd8f23-d74e-433d-b2af-af3d8ee08e6e)
+
+n 为每一个label的样本数量 <br> 
+
+
+![image](https://github.com/user-attachments/assets/9d03af05-e43f-46f9-8b04-1de469a6cf46)
 
