@@ -1,9 +1,9 @@
 ![image](https://github.com/user-attachments/assets/14b29e8b-3731-411d-8591-c693bef9fe85)
 
 
-## PCA 
+# PCA 
 
-# 📘 Principal Component Analysis (PCA) — Feature Projection
+#  Principal Component Analysis (PCA) — Feature Projection
 
 We start with a feature vector:
 
@@ -95,4 +95,18 @@ $$
 告诉我们需要几个eigenvector， 方差达到95% 
 
 
- 
+ # Linear Discriminant Analysi 
+
+ 1. Standardize the d-dimensional dataset (d is the number of features).
+ 2. For each class, compute the d-dimensional mean vector.
+ 3. Construct the between-class scatter matrix, S_b, and the within-class scatter matrix, S_w
+ 4. Compute the eigenvectors and corresponding eigenvalues of the matrix,
+ 5. Sort the eigenvalues by decreasing order to rank the corresponding eigenvectors.
+ 6. Choose the k eigenvectors that correspond to the k largest eigenvalues to construct a d×k-dimensional transofrmation matrix W; the eigenvectors  are the columns of this matrix
+ 7. Project the examples onto the new feature subspace using the transformation matrix, W.
+
+
+
+$$ \mathbf{m}_i = \begin{bmatrix} \mu_{i,\text{alcohol}} \\ \mu_{i,\text{malic acid}} \\ \vdots \\ \mu_{i,\text{proline}} \end{bmatrix}^T, \quad i \in \{1, 2, 3\} 
+$$ 
+
