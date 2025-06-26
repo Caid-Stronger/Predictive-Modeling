@@ -106,4 +106,6 @@ $$
  7. Project the examples onto the new feature subspace using the transformation matrix, W.
 
 
+![image](https://github.com/user-attachments/assets/8db1d303-5f67-4e45-b873-99a66912d638)
+
 
