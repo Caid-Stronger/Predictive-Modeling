@@ -25,3 +25,13 @@ The goal is to consolidate foundational and advanced techniques in predictive an
 * [k-means](https://github.com/Caid-Stronger/Predictive-Modeling/tree/main/Clustering/1.%20K-means)
 * [Hierarchical Tree](https://github.com/Caid-Stronger/Predictive-Modeling/tree/main/Clustering/2.%20Hierarchical%20Tree)
 * [DBSCAN](https://github.com/Caid-Stronger/Predictive-Modeling/tree/main/Clustering/3.%20DBSCAN)
+
+## Preprocessing 
+* [Imputer missing vales, One-hot encoding](https://github.com/Caid-Stronger/Predictive-Modeling/blob/main/Preprocessing/Preprocessing%201.ipynb)
+* [L1/L2 Penalty](https://github.com/Caid-Stronger/Predictive-Modeling/blob/main/Preprocessing/Preprocessing%202.ipynb)
+* [Sequential Feature Scaler](https://github.com/Caid-Stronger/Predictive-Modeling/blob/main/Preprocessing/Preprocessing3.ipynb)
+
+## Compressing Data 
+* [PCA](https://github.com/Caid-Stronger/Predictive-Modeling/blob/main/Compressing%20Data%20via%20dimensionality%20reduction/1.%20PCA.ipynb)
+* [LDA](https://github.com/Caid-Stronger/Predictive-Modeling/blob/main/Compressing%20Data%20via%20dimensionality%20reduction/2.%20LDA.ipynb)
+
